@@ -1,0 +1,366 @@
+<html>
+
+<head>
+  <title>Ternary Operator</title>
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel">
+    //   function App() {
+    //     let loggedIn = false;
+    //     return (
+    //       <>
+    //         <h1>Hello {loggedIn ? "Raj" : "User"}!</h1>
+    //       </>
+    //     );
+    //   }
+
+    //   const rootElement = ReactDOM.createRoot(document.getElementById("root"));
+    //   rootElement.render(<App />);
+
+
+
+    //Q.1) Create a React app that uses the ternary operator to conditionally render the given components.
+
+    //      const IMAGES = [
+    //      "https://res.cloudinary.com/dl26pbek4/image/upload/v1674557549/assets/yannis-zaugg--7TB_r-NuMo-unsplash_tdmglm.jpg",
+    //      "https://res.cloudinary.com/dl26pbek4/image/upload/v1674557550/assets/lino-C2SzUyg3PPQ-unsplash_s8a4tg.jpg",
+    //      "https://res.cloudinary.com/dl26pbek4/image/upload/v1674557550/assets/curioso-photography-QfOhOcrDmvk-unsplash_vgbb3t.jpg",
+    //      "https://res.cloudinary.com/dl26pbek4/image/upload/v1674620718/assets/pexels-garvin-st-villier-3311574_ds8wrh.jpg"
+    //    ];
+
+    //    const Login = () => (
+    //      <div>
+    //        <h3>Login to Continue</h3>
+    //        <form>
+    //          <input placeholder="email" />
+    //          <input placeholder="password" />
+    //          <button>Login</button>
+    //        </form>
+    //      </div>
+    //    );
+
+    //    const Home = () => (
+    //      <div>
+    //        <h3>Welcome to home!</h3>
+    //        <h5>Enjoy this catalog of pictures</h5>
+    //        {IMAGES.map((i) => (
+    //          <img key={i} src={i} />
+    //        ))}
+    //      </div>
+    //    );
+
+    //    const App = () => {
+    //      // create variable here
+    //      let loggin=false;
+    //      // return with ternary operator here
+    //      return(<>
+    //      {loggin ? <Home/> :<Login/>}
+    //      </>
+    //      )
+    //    };
+
+    //    const rootElement = ReactDOM.createRoot(document.getElementById("root"));
+    //    rootElement.render(<App />);
+
+
+    // we want to the when loggin true that time hello raj and also welcome to the the port
+    // display 
+
+    // function App() {
+    //         let loggedIn = true;
+    //         return (
+    //           <>
+    //             <h1>Hello {loggedIn ? "Raj" : "User"}!</h1>
+    //             {loggedIn && <p>Welocome to the Portal</p>}
+    //           </>
+    //         );
+    //       }
+
+    //       const rootElement = ReactDOM.createRoot(document.getElementById("root"));
+    //       rootElement.render(<App />);
+
+
+
+    // function App() {
+    //     let loggedIn = true;
+    //     let name = "Raj";
+    //     let lastName = "Pande"
+    //     return (
+    //         <>
+    //             <h1>Hello {loggedIn ? lastName || name : "User"}!</h1>
+    //             {loggedIn && <p>Welocome to the Portal</p>}
+    //         </>
+    //     );
+    // }
+
+    // const rootElement = ReactDOM.createRoot(document.getElementById("root"));
+    // rootElement.render(<App />);
+
+
+
+    //   const IMAGES = [
+    //   "https://res.cloudinary.com/dl26pbek4/image/upload/v1674557549/assets/yannis-zaugg--7TB_r-NuMo-unsplash_tdmglm.jpg",
+    //   "https://res.cloudinary.com/dl26pbek4/image/upload/v1674557550/assets/lino-C2SzUyg3PPQ-unsplash_s8a4tg.jpg",
+    //   "https://res.cloudinary.com/dl26pbek4/image/upload/v1674557550/assets/curioso-photography-QfOhOcrDmvk-unsplash_vgbb3t.jpg",
+    //   "https://res.cloudinary.com/dl26pbek4/image/upload/v1674620718/assets/pexels-garvin-st-villier-3311574_ds8wrh.jpg"
+    // ];
+
+    // const Login = () => (
+    //   <div>
+    //     <h3>Login to Continue</h3>
+    //     <form>
+    //       <input placeholder="email" />
+    //       <input placeholder="password" />
+    //       <button>Login</button>
+    //     </form>
+    //   </div>
+    // );
+
+    // const Home = () => (
+    //   <div>
+    //     <h3>Welcome to home!</h3>
+    //     <h5>Enjoy this catalog of pictures</h5>
+    //     {IMAGES.map((i) => (
+    //       <img key={i} src={i} />
+    //     ))}
+    //   </div>
+    // );
+
+    // // create premium account component here
+
+    // const App = () => {
+
+    // // create login status and name variable here
+    // let loggIn=false;
+    // let name="John Doe"
+
+
+    //   return (
+    //     <>
+    //       {/* render data here */}
+    //       <h1>Hello {loggIn? name:"Guest"}!</h1>
+    //       {loggIn?<Home/>:<Login/>}
+    //     </>
+    //   );
+    // };
+
+    // const rootElement = ReactDOM.createRoot(document.getElementById("root"));
+    // rootElement.render(<App />);
+
+
+
+
+
+    // Q.1You are given a timetable of a class 12th student. You need to display the timetable of the student in the form of a table. The given timeTable data consists of objects of a particular day and each day consists of objects which show subject details across a particular hour.
+    // Note: The starting period time is in hours. So think of a logic to fetch your current time in hours using JavaScript and display the data in the table accordingly.
+    // You can see that class starts at 9 am and the last class is at 15 pm (which is actually 3 pm). The lunchtime is at 12 noon. Therefore there is no class at that time. Also, note that every lecture is of 1 hour.
+
+    const timeTable = {
+      Monday: {
+        9: {
+          subject: "Maths",
+          teacher: "Brijesh Mishra",
+          time: "1 hour"
+        },
+        10: {
+          subject: "Physics",
+          teacher: "Sumit Yadav",
+          time: "1 hour"
+        },
+        11: {
+          subject: "Chemistry",
+          teacher: "Vedanti Joshi",
+          time: "1 hour"
+        },
+        13: {
+          subject: "English Litrature",
+          teacher: "Mayur Pandey",
+          time: "1 hour"
+        },
+        14: {
+          subject: "Hindi Vyakaran",
+          teacher: "Sony Desai",
+          time: "1 hour"
+        },
+        15: {
+          subject: "PT",
+          teacher: "Sonu Tyagi",
+          time: "1 hour"
+        }
+      },
+      Tuesday: {
+        9: {
+          subject: "Physics",
+          teacher: "Sumit Yadav",
+          time: "1 hour"
+        },
+        10: {
+          subject: "Hindi Sahitya",
+          teacher: "Ramesh Jha",
+          time: "1 hour"
+        },
+        11: {
+          subject: "Environtal Studies",
+          teacher: "Rakesh Prakash",
+          time: "1 hour"
+        },
+        13: {
+          subject: "Biology",
+          teacher: "Kuldeep Narayan",
+          time: "1 hour"
+        },
+        14: {
+          subject: "Maths",
+          teacher: "Brijesh Mishra",
+          time: "1 hour"
+        },
+        15: {
+          subject: "Physics Practical",
+          teacher: "Sumit Yadav",
+          time: "1 hour"
+        }
+      },
+      Wednesday: {
+        9: {
+          subject: "Chemistry",
+          teacher: "Vedanti Joshi",
+          time: "1 hour"
+        },
+        10: {
+          subject: "English Grammar",
+          teacher: "Aditi Upasane",
+          time: "1 hour"
+        },
+        11: {
+          subject: "Maths",
+          teacher: "Brijesh Mishra",
+          time: "1 hour"
+        },
+        13: {
+          subject: "English Litrature",
+          teacher: "Mayur Pandey",
+          time: "1 hour"
+        },
+        14: {
+          subject: "Physics",
+          teacher: "Sumit Yadav",
+          time: "1 hour"
+        },
+        15: {
+          subject: "Chemistry Practical",
+          teacher: "Vedanti Joshi",
+          time: "1 hour"
+        }
+      },
+      Thursday: {
+        9: {
+          subject: "Biology",
+          teacher: "Kuldeep Narayan",
+          time: "1 hour"
+        },
+        10: {
+          subject: "Hindi Sahitya",
+          teacher: "Ramesh Jha",
+          time: "1 hour"
+        },
+        11: {
+          subject: "Chemistry",
+          teacher: "Vedanti Joshi",
+          time: "1 hour"
+        },
+        13: {
+          subject: "Maths",
+          teacher: "Brijesh Mishra",
+          time: "1 hour"
+        },
+        14: {
+          subject: "Physics",
+          teacher: "Sumit Yadav",
+          time: "1 hour"
+        },
+        15: {
+          subject: "Biology Practical",
+          teacher: "Kuldeep Narayan",
+          time: "1 hour"
+        }
+      },
+      Friday: {
+        9: {
+          subject: "English Litrature",
+          teacher: "Mayur Pandey",
+          time: "1 hour"
+        },
+        10: {
+          subject: "Hindi Sahitya",
+          teacher: "Ramesh Jha",
+          time: "1 hour"
+        },
+        11: {
+          subject: "English Grammar",
+          teacher: "Aditi Upasane",
+          time: "1 hour"
+        },
+        13: {
+          subject: "Biology",
+          teacher: "Kuldeep Narayan",
+          time: "1 hour"
+        },
+        14: {
+          subject: "Hindi Vyakaran",
+          teacher: "Sony Desai",
+          time: "1 hour"
+        },
+        15: {
+          subject: "PT",
+          teacher: "Sonu Tyagi",
+          time: "1 hour"
+        }
+      }
+    };
+
+    const days = Object.keys(timeTable);
+
+    const App = () => (
+      <table border="1">
+        <caption>School time-table of a class 12th Student.</caption>
+        {/* Write your code from here */}
+        <thead>
+          <tr>
+            <th></th>
+            <th>9am-10am</th>
+            <th>10am-11am</th>
+            <th>11am-12noon</th>
+            <th>12noon-1pm</th>
+            <th>1pm-2pm</th>
+            <th>2pm-3pm</th>
+            <th>3pm-4pm</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {days.map((day) => (
+            <tr>
+              <td>{day}</td>
+              {[9, 10, 11, "Break", 13, 14, 15].map((time) => (
+                <td key={time}>
+                  {time === "Break" ? "Break" : timeTable[day][time].subject}
+                </td>
+              ))}
+            </tr>
+          ))}
+
+        </tbody>
+      </table>
+    );
+    const rootElement = ReactDOM.createRoot(document.getElementById("root"));
+    rootElement.render(<App />);
+  </script>
+</body>
+
+</html>

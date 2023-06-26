@@ -1,0 +1,15 @@
+1) install node.js
+
+nodejs is helps to serviing the pages
+npm : Node packege maneger
+
+2) chrome 
+
+3) VS code
+
+cmd : npm install -g create-react-app
+cmd: create-react-app
+
+when you are not install globally create-react-app  then use : npx create-react-app helloworld
+
+when you are install globally create-react-app  then use : create-react-app helloworld

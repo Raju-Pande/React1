@@ -1,0 +1,298 @@
+<html>
+
+<head>
+    <title>Arrays And Object</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        // function App() {
+        //     let arr = [1, 2, 3, 4, 5, 6];
+        //     // here for loop dosen't work because for loop not return any thing . jsx is return somthing
+        //     let obj = {
+        //         name: "raj",
+        //         age: 10
+        //     }
+        //     return (
+        //         <>
+        //             <h1>Arrays and Objects in JavaScript</h1>
+
+        //             // here Individually print 
+        //              {arr.map((num)=><h2>{num}</h2>)}
+        //             <h2>{obj.name}</h2>
+        //         </>
+        //     )
+        // }
+        // const rootElement = ReactDOM.createRoot(document.getElementById("root"));
+        // rootElement.render(<App />)
+
+        // assignment in class or map method use
+        // function App() {
+        //     let Cars=["BMW","FERRARI","TESLA", "MARUTI SUZUKI"]
+
+        //     return (
+        //         <>
+        //     <h1> List of Cars</h1>
+        //         <ul>
+        //             {Cars.map((num,index)=><li key={index} >{num}</li>)}
+        //         </ul>
+
+        //         </>
+        //     )
+        // }
+        // const rootElement = ReactDOM.createRoot(document.getElementById("root"));
+        // rootElement.render(<App />)
+
+
+
+        // Q.1) Create a React app and use the ES6+ array iteration method to filter and render items.
+        // You have to use the h3 element to show each item of the filtered list.
+
+        // const App = () => {
+        //     const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        //     const filteredNumbers = numbers.filter((number) => number % 2 == 0)
+        //     return (
+        //         <>
+        //             <h1>ES6 Array Iteration Methods</h1>
+        //             {/* iterate over array here */}
+        //             {filteredNumbers.map((number) => (<h3>{number}</h3>))}
+        //         </>
+        //     );
+        // };
+
+        // const rootElement = ReactDOM.createRoot(document.getElementById("root"));
+        // rootElement.render(<App />);
+
+
+        // Q.3) create student table
+
+        // let Students = [
+        //     {
+        //         name: "Raj",
+        //         age: 23,
+        //         marks: 73
+        //     },
+        //     {
+        //         name: "Sandip",
+        //         age: 24,
+        //         marks: 85
+        //     },
+        //     {
+        //         name: "Rahul",
+        //         age: 25,
+        //         marks: 80
+        //     }
+        // ]
+
+        // function App() {
+        //     return (
+        //         <>
+        //             <h1>Student Details</h1>
+        //             <table border="1px">
+        //                 <thead>
+        //                     <tr>
+        //                         <th>NAME</th>
+        //                         <th>AGE</th>
+        //                         <th>MARKS</th>
+        //                     </tr>
+        //                 </thead>
+
+        //                 <tbody>
+        //                     {Students.map((Student, index) =>
+        //                         <tr key={index}>
+        //                             <td>{Student.name}</td>
+        //                             <td>{Student.age}</td>
+        //                             <td>{Student.marks}</td>
+        //                         </tr>
+        //                     )}
+        //                 </tbody>
+        //             </table>
+        //         </>
+        //     )
+        // }
+        // const rootElement = ReactDOM.createRoot(document.getElementById("root"));
+        // rootElement.render(<App />)
+
+
+        // You want to create a simple dashboard for an electronic store where we can see the name, selling price, quantity, and total revenue for sold products in a table format.
+        // Note: You are given the list of sold items.
+        // Create columns inside the table head with appropriate labels to match the expected output image.
+        // Iterate over the data and for each item render appropriate fields inside the table body.
+        // Create a table footer and display the revenue of the sold items.
+        // Hint:(click to expand)
+        // Learn more about the reduce method here (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
+
+        // const App = () => {
+        //     const itemsSold = [
+        //         { id: 1, name: "iPhone 14", price: 1200, qty: 22 },
+        //         { id: 2, name: "iPad Pro", price: 800, qty: 18 },
+        //         { id: 3, name: "Macbook Air", price: 1500, qty: 7 },
+        //         { id: 4, name: "Samsung S23", price: 1100, qty: 16 },
+        //         { id: 5, name: "Dell Inspiron 5590", price: 1200, qty: 5 }
+        //     ];
+        //     const initialValue = 0;
+        //     const Revenue = itemsSold.reduce((accumulator, item) => accumulator + item.price, initialValue)
+
+        //     return (
+        //         <>
+        //             <h1>Record of sold items</h1>
+        //             <table border="1px">
+        //                 {/* iterate over data here */}
+        //                 <thead>
+        //                     <tr>
+        //                         <th>Id</th>
+        //                         <th>Name</th>
+        //                         <th>Price</th>
+        //                         <th>Qty</th>
+        //                     </tr>
+        //                 </thead>
+        //                 <tbody>
+        //                     {itemsSold.map((item, index) =>
+        //                         <tr key={index}>
+        //                             <td>{item.id}</td>
+        //                             <td>{item.name}</td>
+        //                             <td>{item.price}</td>
+        //                             <td>{item.qty}</td>
+
+        //                         </tr>
+        //                     )}
+        //                 </tbody>
+        //                 <tfoot>
+        //                     <tr>
+        //                         <td >Total Revenue</td>
+        //                         <td colSpan="3" style={{ textAlign: "left" }}>${Revenue}</td>
+        //                     </tr>
+        //                 </tfoot>
+
+        //             </table>
+        //         </>
+        //     );
+        // };
+
+        // const rootElement = ReactDOM.createRoot(document.getElementById("root"));
+        // rootElement.render(<App />);
+
+
+
+// here create two two page studentPage and CarPage here one more codition apply if carPage is true then showing the car info.
+
+        function StudentPage() {
+            let Students = [
+                {
+                    name: "Raj",
+                    age: 23,
+                    marks: 73
+                },
+                {
+                    name: "Sandip",
+                    age: 24,
+                    marks: 85
+                },
+                {
+                    name: "Rahul",
+                    age: 25,
+                    marks: 80
+                }
+            ];
+
+            return (
+                <>
+                    <h1>Student Details</h1>
+                    <table border="1px">
+                        <thead>
+                            <tr>
+                                <th>NAME</th>
+                                <th>AGE</th>
+                                <th>MARKS</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            {Students.map((Student, index) =>
+                                <tr key={index}>
+                                    <td>{Student.name}</td>
+                                    <td>{Student.age}</td>
+                                    <td>{Student.marks}</td>
+                                </tr>
+                            )}
+                        </tbody>
+                    </table>
+                </>
+            )
+        }
+        function CarPage() {
+
+            let cars = [
+                {
+                    name: "BMW",
+                    avg: 20,
+                    img: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80"
+                },
+                {
+                    name: "FERRARI",
+                    avg: 20,
+                    img: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80"
+                },
+                {
+                    name: "TESLA",
+                    avg: 20,
+                    img: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80"
+                },
+            ]
+            return (
+                <>
+                    <h1>Cars Details</h1>
+                    <table>
+                        <thead>
+                            <tr>
+
+                                <th>Image</th>
+                                <th>Name</th>
+                                <th>Avg</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {cars.map((car, index) => (
+                                <tr key={index}>
+                                    <td><img src={car.img} /></td>
+                                    <td>{car.name}</td>
+                                    <td>{car.avg}</td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+                </>
+            )
+        }
+        function App() {
+            // return (
+            // <>
+            //     <StudentPage />
+            //     <CarPage />
+            // </>
+
+            // )
+
+            let showCars = false;
+
+            if (showCars) {
+                return < CarPage />
+            }
+            return (
+                <>
+                    <StudentPage />
+                </>
+            )
+        }
+
+        const rootElement = ReactDOM.createRoot(document.getElementById("root"));
+        rootElement.render(<App />)
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+webpack: it is Module Bundler
+
+and modern JavaScript use webpack in that all file in your application combines them together e.g. app.js, form.js button.js, app.css
+
+webpack is internaly transforms
+
+(webpack.configue.js)
+in that Entry point , entry points means which file first going 
+
+index.js --> imports
+
+path{src/index.js}
+
+webpack and Loaders is also automatic convert ES6  to ---> ES5  and SASS ---> CSS
+
+"Loaders" helps the webpack to transforms the files
+Loaders allow webpack to transform different types of files and assets into valid modules that can be used in your JavaScript application. This includes tasks such as transpiling TypeScript or ES6 code to JavaScript, bundling CSS files, optimizing images, and more.
+
+after Loaders output:- path store
+
+plugin helps to inject script tag and diffrent thing inject in code 
+
+create-react-app 
+
+
+
+The entry property in the webpack configuration file can be set to a string or an array or strings which are paths to the files in your application. Webpack will put these files at the top of its internal dependency graph

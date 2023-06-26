@@ -1,0 +1,10 @@
+CDN does not work without an internet connection
+CDN can fail if the servers running that service fails to operate
+CDN can cause support and infrastructure issues
+
+
+CDN relies on an internet connection to function properly. Without an internet connection, the CDN cannot deliver the content effectively, resulting in potential performance issues or content unavailability.
+
+CDN services are operated by servers, and if those servers experience technical difficulties or go down, it can lead to the failure of the CDN. This can result in content not being delivered efficiently or at all, affecting user experience.
+
+Implementing and maintaining a CDN can introduce additional complexities and potential support and infrastructure issues. Managing a CDN setup may require specialized knowledge and support, adding to the overall infrastructure and operational costs.
