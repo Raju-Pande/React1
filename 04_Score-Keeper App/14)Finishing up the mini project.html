@@ -17,14 +17,18 @@
         let inputRef=React.createRef();
 
         function addScore(num) {
+            if (wicket < 10) {
             hit = num;
             rootElement.render(<App />)
             console.log(hit);
+            }
         }
         function addWicket() {
+            if (wicket < 10) {
             hit = "W"
             rootElement.render(<App />)
             console.log(hit);
+            }
         }
 
 

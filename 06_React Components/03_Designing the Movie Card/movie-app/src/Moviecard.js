@@ -26,7 +26,7 @@ class MovieCard extends Component {
 
                         <div className="footer">
                             <div className="rating">8.9 </div>
-                            <div className="stars">Stars</div>
+                            <div className="star-dis">Stars</div>
                            <button className="favourite-btn">Favourite</button>
                            <button className="cart-btn">Add to cart</button>
                         </div>
