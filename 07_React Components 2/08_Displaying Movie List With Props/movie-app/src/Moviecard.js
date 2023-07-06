@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 class MovieCard extends Component {
- 
+
 
   // The "addStars" method logs the value of "this" when called.
   // Since the method is not using "this" internally, it can be converted to an arrow function.
@@ -79,15 +79,16 @@ class MovieCard extends Component {
     // console.log(data);
     // const { title, plot, price, rating, stars, fav, isInCart } = data;
 
-    const { title, plot, price, rating, stars, fav, isInCart } = this.props.movie;
-
+    const { title, plot, poster, price, rating, stars, fav, isInCart } = this.props.movies;
+    console.log(this.props.movies)
     return (
       <div className="main">
         <div className="movie-card">
+           {/**Left section of Movie Card */}
           <div className="left">
             <img
               alt="Poster"
-              src="https://lumiere-a.akamaihd.net/v1/images/p_avengersendgame_19751_e14a0104.jpeg?region=0%2C0%2C540%2C810"
+              src={poster}
             />
           </div>
 

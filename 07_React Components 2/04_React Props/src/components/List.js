@@ -1,4 +1,5 @@
 import React from "react";
+import ListItem from "./ListItem";
 
 class List extends React.Component {
   constructor() {
@@ -33,21 +34,21 @@ class List extends React.Component {
   render() {
     const { data } = this.state;
 
-    // Code here
     return (
-      <>
-        {data.map(item => (
-          <div className="List" key={item.id}>
-            <div>{item.id}</div>
-            <div>{item.name}</div>
-            <div>{item.link}</div>
-
-          </div>
-        ))}
-
-
-      </>
-    )
+      <div className="List">
+        {data.map((val) => {
+          return (
+            <ListItem
+              key={val.id}
+              name={val.name}
+              link={val.link}
+              icon={val.icon}
+              bgColor={val.bgColor}
+            />
+          );
+        })}
+      </div>
+    );
   }
 }
 
