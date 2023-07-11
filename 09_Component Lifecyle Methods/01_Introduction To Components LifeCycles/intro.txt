@@ -1,0 +1,47 @@
+What do you understand by the term LifeCylcle??
+
+Component Lifecycle: Component Lifecycle is the series of stages through which a 
+Component passes from the beginning of life until( when the Component created/ when a Component inserted into DOM (Mounted))
+ its death(Removed from the DOM (un-Mounted)) .
+
+Different Phases of a Component Lifecycle 
+
+1) Mounting : 
+When an instance of a Component is being created into the DOM.
+
+2) Updating :
+ When a Component is being re-rendered as a result of changes done to its props or state.
+
+3) UN-Mounting:
+ when a Component is being Removed from the DOM 
+
+ 4) ERROR HANDLING :
+ When there is an Error during rendering
+
+
+ Q2. What are "Side-Effects" ??
+
+ --> Side-Effects are action which are not predictable because 
+ they are actions which are performed with the "outside world" (outside of react).
+ - Intraction with the Browser API's  (localStorage)
+ -Netive DOM Method (insted React DOM)
+ - Fetching the Data using API
+ 
+
+ MCQ
+ Q.1 What is the order of phases of lifecycle methods in React?
+
+-->  React's lifecycle includes the phases in the following order -
+Mounting phase for component creation, Updating phase for state or prop changes,
+ Unmounting phase for removing components from the DOM, and Error Handling phase for the rendering of lifecycle errors
+
+Q.2 Which of the following are examples of side effects in React?
+
+-->
+- Fetching data from an API
+- Interaction with the Browser APIs
+- Using Native DOM methods
+
+
+Solution Description
+Handling user events such as onClick or onChange is not an action that should be performed using a side effect.

@@ -1,0 +1,22 @@
+1) Mounting
+i)constructor() when you are new component cretaed that time automatically created when created constructor() only "state" and "bind"  state -- diectly modified  only constructor  and "avoid any side-effect and setState"  no side effect
+ii)Static getDerivedStateFromProps()   reare use no side effect here 
+iii)render();    render function only req. class based function  return jsx   - Avoid side effect  pure function (same output and same input)   no side effect
+iv) componentDidMount(); whenever the component to the Mounted the DOM then this function will be inwoke   - this the place to performe any side-effect  setState ()
+
+
+
+
+
+
+The "render()" method should not be used to manipulate the state or cause side effects. The purpose of the render() method in React is to return the JSX representation of the component based on its current state and props. It should be a pure function without any side effects.
+
+On the other hand, the other methods mentioned in the options can be used to manipulate the state or cause side effects:
+
+The "constructor()" method is used for initializing the state and binding event handlers. It is an appropriate place to set the initial state of a component.
+
+The "componentDidMount()" method is a lifecycle method that is called after the component has been rendered for the first time. It is commonly used for fetching data from an API or setting up subscriptions. It can be used to modify the state or perform other side effects.
+
+The "getDerivedStateFromProps()" method is a lifecycle method that is invoked right before rendering when new props are received. It is used to update the state based on changes in props. While it's not recommended to use this method for complex state updates, it can be used for simple state synchronization.
+
+Therefore, the correct answer is "render()".
