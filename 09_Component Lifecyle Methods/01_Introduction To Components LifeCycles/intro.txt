@@ -6,7 +6,7 @@ Component passes from the beginning of life until( when the Component created/ w
 
 Different Phases of a Component Lifecycle 
 
-1) Mounting : 
+1) Mou  nting : 
 When an instance of a Component is being created into the DOM.
 
 2) Updating :

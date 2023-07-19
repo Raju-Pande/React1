@@ -26,6 +26,7 @@ class MovieCard extends Component {
 
   render() {
     // Destructuring state values for easier usage within JSX.
+    
     const { title, plot, price, rating } = this.state;
 
     return (

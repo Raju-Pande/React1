@@ -44,19 +44,19 @@
                 <button onClick={addWicket} >W</button>
             </div>
         )
-        const Result = () => (
-            <div>
-                {ballWiseRes.map((res, index) => (
-                    <>
-                        {index % 6 === 0 ? <br /> : null}
-                        <span key={index}>
-                            {res == 0 ? <strong>.</strong> : res && res == "W" ? <strong style={{ color: "red" }}>W</strong> : res}
-                        </span>&nbsp;&nbsp;&nbsp;&nbsp;
-                    </>
-                ))}
+        // const Result = () => (
+        //     <div>
+        //         {ballWiseRes.map((res, index) => (
+        //             <>
+        //                 {index % 6 === 0 ? <br /> : null}
+        //                 <span key={index}>
+        //                     {res == 0 ? <strong>.</strong> : res && res == "W" ? <strong style={{ color: "red" }}>W</strong> : res}
+        //                 </span>&nbsp;&nbsp;&nbsp;&nbsp;
+        //             </>
+        //         ))}
 
-            </div>
-        )
+        //     </div>
+        // )
 
         function handleSubmit(event) {
             event.preventDefault();

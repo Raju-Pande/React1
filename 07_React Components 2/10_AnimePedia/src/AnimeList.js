@@ -27,7 +27,7 @@ class AnimeList extends Component {
   }
   render() {
     const { anime } = this.state
-    return <div className="anime-list">
+    return<div className="anime-list">
       {anime.map((ani, index) => (
         <AnimeCard anime={ani}
           key={index} />

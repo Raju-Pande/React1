@@ -47,7 +47,7 @@ and here all import top of the file create
         }
 
 
-        also secnd file create index.js
+        also second file create index.js
         here import the variable
 
         index.js:
@@ -117,9 +117,9 @@ and here all import top of the file create
         here import the variable
 
         index.js:
-and here all import top of the file create
+        and here all import top of the file create
 
-when we want to change that variable name that time you use the "as" keyword and change the name
+        when we want to change that variable name that time you use the "as" keyword and change the name
 
         import {a as b , arr as arr1 , obj as obj1 , greet as greet1} from "./app"
         console.log(b); 
@@ -135,7 +135,7 @@ when we want to change that variable name that time you use the "as" keyword and
 
        5) here all variable export and export at the bottom
         here create one file app.js in that file
-    "app.js" file:
+       "app.js" file:
 
 
          let a=10;
@@ -153,7 +153,7 @@ when we want to change that variable name that time you use the "as" keyword and
         here import the variable
 
         index.js:
-and here all import top of the file create
+        and here all import top of the file create
 
         import {b,arr1,obj1, greet1} from "./app"
         console.log(b); 
@@ -168,7 +168,7 @@ and here all import top of the file create
 
 1) here all variable export and Default Export
         here create one file app.js in that file
-    "app.js" file:
+         "app.js" file:
 
 
          let a=10;
@@ -186,7 +186,7 @@ and here all import top of the file create
         here import the variable
 
         index.js:
-and here all import top of the file create
+        and here all import top of the file create
 
         import {a,arr,obj} from "./app"
         
@@ -202,7 +202,7 @@ and here all import top of the file create
 
 2) here all variable export and Default Export
         here create one file app.js in that file
-    "app.js" file:
+        "app.js" file:
 
 
          let a=10;
@@ -220,7 +220,7 @@ and here all import top of the file create
         here import the variable
 
         index.js:
-and here all import top of the file create
+        and here all import top of the file create
 
         import {a,arr,obj} from "./app"
         
@@ -250,13 +250,13 @@ and here all import top of the file create
         export{a,arr,obj}
         
 
-        also secnd file create index.js
+        also second file create index.js
         here import the variable 
 
         index.js:
-and here all import top of the file create
+        and here all import top of the file create
  
- when we are import default at that time you can give any name becaues here only one default export 
+         when we are import default at that time you can give any name becaues here only one default export 
 
         import {a,arr,obj} from "./app"
         

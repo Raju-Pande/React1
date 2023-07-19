@@ -1,0 +1,30 @@
+Updating:
+1) static getDrivedStateFromProps()    no side effect 
+2) shouldComponentUpdate()   rearely use   return boolean true or false  and bydefault "true"  and the false that time render () will not be called  and no side effect and no state
+3) render()
+4) getSnapShotBeforeUpdate()
+5) componentDidUpdate();    here any side effect perform here setState \
+
+
+
+
+Un-Mounting
+
+1)componentWillUnmount() no side effect and no setState   component destroyed
+
+
+mcq
+
+Q.1) You are building a text editor, where every time you enter some text, it rerenders the component and autosaves the text to a database. Which lifecycle method will you use to request the API to autosave the changes?
+
+ans: componentDidUpdate()
+
+As the component is rerendered every time you type, the componentDidUpdate() method gets called after each render. Hence, it is the best place to cause a side effect and send a request to save the text.
+
+
+
+Q.2) You are building an app that fetches movies whenever you type something in the searchbar. To optimize for slow network speeds, you want to cancel the previous requests if a new one is to be made immediately. Which lifecycle method will you use to implement this functionality?
+
+ans: componentWillUnmount()
+
+componentWillUnmount() is a recommended method to unsubscribe events or cancel previous requests. In this case, the previous request isn’t required to be sent as it may cause unnecessary API calls and increased network costs. Therefore, we are canceling the request.

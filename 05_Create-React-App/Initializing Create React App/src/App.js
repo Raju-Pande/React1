@@ -11,7 +11,7 @@ function App() {
         </p>
         <p>Welcome to React Course on <code>codingninjas.com</code> </p>
         <a
-          className="App-link"
+          className="App-link" 
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"

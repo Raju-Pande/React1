@@ -19,9 +19,11 @@ class App extends React.Component {
     };
   }
 
-  handleClick=()=> {
+  handleClick = () => {
     const moodIndex = Math.floor(Math.random() * MOODS.length);
-    this.setState({ prediction: MOODS[moodIndex] });
+    this.setState({
+      prediction: MOODS[moodIndex]
+    });
   }
 
   render() {

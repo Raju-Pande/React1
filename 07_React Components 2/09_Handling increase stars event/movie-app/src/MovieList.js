@@ -105,10 +105,10 @@ class MovieList extends Component {
         {movies.map((movie, index) => (
           <MovieCard movies={movie}
             key={index}
-          onIncStars = {this.handleAddStars}
-          onDecStars = {this.handleDecStars}
-          onClickFav = {this.handleToggleFav}
-          onClickAddtocart = {this.handleAddtocart}
+            onIncStars={this.handleAddStars}
+            onDecStars={this.handleDecStars}
+            onClickFav={this.handleToggleFav}
+            onClickAddtocart={this.handleAddtocart}
           />
         ))}
       </div>
